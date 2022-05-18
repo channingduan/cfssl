@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/log"
+	"github.com/VoneChain-CS/fabric-sdk-go-gm/cfssl/errors"
+	"github.com/VoneChain-CS/fabric-sdk-go-gm/cfssl/log"
 )
 
 // Handler is an interface providing a generic mechanism for handling HTTP requests.
@@ -176,7 +176,7 @@ type Response struct {
 	Messages []ResponseMessage `json:"messages"`
 }
 
-// NewSuccessResponse is a shortcut for creating new successful API
+// NewSuccessResponse is a shortcut for creating new successul API
 // responses.
 func NewSuccessResponse(result interface{}) Response {
 	return Response{
